@@ -1,3 +1,8 @@
+#reference for spec_helper,
+#http://serverspec.org/
+
+
+
 require 'pathname'
 dir = Pathname.new(__FILE__).parent
 $LOAD_PATH.unshift(dir, dir + 'lib', dir + '../lib')
