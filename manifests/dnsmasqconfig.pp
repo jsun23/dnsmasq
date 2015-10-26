@@ -5,7 +5,8 @@
 
 define dnsmasq::config(
 	$ensure = 'present',
-	$prio = 
+	$prio = 10,
+	$
 
 
 
