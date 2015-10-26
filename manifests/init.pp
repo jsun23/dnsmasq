@@ -10,6 +10,8 @@ class dnsmasq(
 	$config = $dnsmasq::params::config,
 	$config_dir = $dnsmasq::params::config_dir, 
 	$config_template = $dnsmasq::params::config_template,
+	$servers = $dnsmasq::params::servers,
+	$domain = ['1.2.3.4'],
 	$package_name = $dnsmasq::params::package_name,
 	$package_ensure = $dnsmasq::package_ensure,
 	$service_name = $dnsmasq::params::service_name,
@@ -24,7 +26,8 @@ validate_absolute_path($config)
 validate_absolute_path($config_dir)
 validate_string($config_template)
 validate_string($package_ensure)
-validate_array($package_name)
+validate_array($package_name) 
+validate_array($servers)
 validate_string($service_name)
 validate_bool($service_enable)
 validate_string($service_ensure)
