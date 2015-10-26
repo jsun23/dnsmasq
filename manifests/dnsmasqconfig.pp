@@ -1,5 +1,5 @@
 #dnsmasq configulation
-#class dnsmasq::dnsmasqconfig
+#define dnsmasq::dnsmasqconfig
 
 
 

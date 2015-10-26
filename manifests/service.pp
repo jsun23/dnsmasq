@@ -1,5 +1,6 @@
 # Class :: dnsmasq::service
-
+# Basic idea comes from online source
+# https://docs.puppetlabs.com/guides/module_guides/bgtm.html#moduleservice
 class dnsmasq::service inherits dnsmasq{
 	
 	if !($dnsmasq::service_ensure in['running','stopped']){

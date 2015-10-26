@@ -1,6 +1,14 @@
+#module class dnsmasq
+#The basic idea is from puppetlabs 
+#The example of ntp 
+#https://docs.puppetlabs.com/guides/module_guides/bgtm.html#module
+
+
+
+
 class dnsmasq(
 	$config = $dnsmasq::params::config,
-	$config_dir = $dnsmasq::params::config_dir,
+	$config_dir = $dnsmasq::params::config_dir, 
 	$config_template = $dnsmasq::params::config_template,
 	$package_name = $dnsmasq::params::package_name,
 	$package_ensure = $dnsmasq::package_ensure,
