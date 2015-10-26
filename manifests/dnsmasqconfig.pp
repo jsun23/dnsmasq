@@ -1,16 +1,20 @@
 #dnsmasq configulation
-#class dnsmasq::config
+#class dnsmasq::dnsmasqconfig
 
 
 
-define dnsmasq::config(
-	$ensure = 'present',
+define dnsmasq::dnsmasqconfig(
+	$ensure = $package_ensure,
 	$prio = 10,
-	$
+	$source = undef,
+	$content = undef){
+	
+	
+	include dnsmasq
 
 
 
-) 
+
 
 file { "${dnsmasq::params::config_dir}${prio}-${name}":
     ensure  => $ensure,

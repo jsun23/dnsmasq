@@ -2,7 +2,6 @@ class dnsmasq(
 	$config = $dnsmasq::params::config,
 	$config_dir = $dnsmasq::params::config_dir,
 	$config_template = $dnsmasq::params::config_template,
-	$hosts_file = $dnsmasq::params::hosts_file,
 	$package_name = $dnsmasq::params::package_name,
 	$package_ensure = $dnsmasq::package_ensure,
 	$service_name = $dnsmasq::params::service_name,
