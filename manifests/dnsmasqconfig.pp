@@ -7,7 +7,10 @@ define dnsmasq::dnsmasqconfig(
 	$ensure = $package_ensure,
 	$prio = 10,
 	$source = undef,
-	$content = undef){
+	$content = undef
+	$domain = $domain
+	
+	){
 	
 	
 	include dnsmasq
